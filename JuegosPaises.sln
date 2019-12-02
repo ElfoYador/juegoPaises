@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriasJuego", "LibreriasJuego\LibreriasJuego.csproj", "{5CFEAC6A-D12F-439A-80A5-A92DCD6987FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibreriasJuego", "LibreriasJuego\LibreriasJuego.csproj", "{5CFEAC6A-D12F-439A-80A5-A92DCD6987FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasLibreria", "PruebasLibreria\PruebasLibreria.csproj", "{2990D59C-9B85-458F-A947-0C13BE6C17BC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5CFEAC6A-D12F-439A-80A5-A92DCD6987FB} = {5CFEAC6A-D12F-439A-80A5-A92DCD6987FB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{5CFEAC6A-D12F-439A-80A5-A92DCD6987FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CFEAC6A-D12F-439A-80A5-A92DCD6987FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CFEAC6A-D12F-439A-80A5-A92DCD6987FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2990D59C-9B85-458F-A947-0C13BE6C17BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2990D59C-9B85-458F-A947-0C13BE6C17BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2990D59C-9B85-458F-A947-0C13BE6C17BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2990D59C-9B85-458F-A947-0C13BE6C17BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

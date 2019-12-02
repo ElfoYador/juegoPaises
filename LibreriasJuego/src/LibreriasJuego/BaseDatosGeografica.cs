@@ -10,7 +10,9 @@ namespace LibreriasJuego
 
         public Jugador getContinente(string nombreContinente);
 
-      
+        public Pais getPais(string nombrePais);
+
+
 
         public IList<Continente> getContinentes();
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LibreriasJuego
 {
-    public interface BaseDatosGeografica
+    public interface BaseDatosJugadores
     {
         public Jugador nuevoJugador(string nombreJugador);
 
