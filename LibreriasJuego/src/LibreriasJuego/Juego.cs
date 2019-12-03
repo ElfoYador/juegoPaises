@@ -8,8 +8,10 @@ namespace LibreriasJuego
     {
 
         private static Juego miJuego;
-        private Juego() { 
-           
+        private Juego() {
+            baseDatosJugadores = null;
+            baseDatosGeografica = null;
+
         }
 
         public static Juego GetInstancia()
@@ -20,5 +22,9 @@ namespace LibreriasJuego
             }
             return miJuego;
         }
+
+
+        public IBaseDatosJugadores baseDatosJugadores { get; }
+        public IBaseDatosGeografica baseDatosGeografica { get; }
     }
 }

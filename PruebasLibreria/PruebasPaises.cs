@@ -9,8 +9,8 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestEspaña_Capital()
         {
-            BaseDatosGeografica miBaseDatosGeografica = null;
-            Pais españa = miBaseDatosGeografica.getPais("España");
+            IBaseDatosGeografica miBaseDatosGeografica = null;
+            IPais españa = miBaseDatosGeografica.getPais("España");
             Assert.AreEqual(españa.capital,"Madrid");
 
         }
@@ -18,7 +18,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestEspaña_Nombre()
         {
-            Pais españa = null;
+            IPais españa = null;
             Assert.AreEqual(españa.nombre, "España");
 
         }
@@ -26,8 +26,8 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestEspaña_Continente()
         {
-            Pais españa = null;
-            Continente europa = null;
+            IPais españa = null;
+            IContinente europa = null;
             Assert.AreEqual(españa.continente, europa);
 
         }

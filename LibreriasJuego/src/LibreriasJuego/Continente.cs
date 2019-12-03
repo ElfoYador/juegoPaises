@@ -2,11 +2,27 @@
 
 namespace LibreriasJuego
 {
-    public interface Continente
+    public class Continente: IContinente
     {
-        public string nombre { get; }
-       public IList<Pais> paises { get; }
 
-        public Pais getPais(string nombrePais);
+        internal Continente(string nombre) {
+            this.nombre = nombre;
+            paises = new List<IPais>();
+            misPaises = new Dictionary<string, IPais>();
+        }
+        public string nombre { get; }
+
+        private Dictionary <string,IPais> misPaises { get; }
+       public IList<IPais> paises { get => { return (List)misPaises; };
+                       }
+
+        public IPais getPais(string nombrePais) {
+
+            return misPaises[nombrePais];
+        }
+        internal void asignarPais (IPais nuevoPais)
+        {
+            misPaises.Add(nuevoPais.nombre, nuevoPais);
+        }
     }
 }
