@@ -7,14 +7,13 @@ namespace LibreriasJuego
 
         internal Continente(string nombre) {
             this.nombre = nombre;
-            paises = new List<IPais>();
             misPaises = new Dictionary<string, IPais>();
         }
         public string nombre { get; }
 
         private Dictionary <string,IPais> misPaises { get; }
-       public IList<IPais> paises { get => { return (List)misPaises; };
-                       }
+       public IList<IPais> paises { get => new List<IPais> (misPaises.Values).AsReadOnly(); }
+                       
 
         public IPais getPais(string nombrePais) {
 

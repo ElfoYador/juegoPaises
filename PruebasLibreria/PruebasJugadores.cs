@@ -8,33 +8,33 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestAltaJugador()
         {
-            BaseDatosJugadores miBaseDatosJugadores =
+            IBaseDatosJugadores miBaseDatosJugadores =
                 Juego.GetInstancia().baseDatosJugadores;
-            Jugador ivan = miBaseDatosJugadores.nuevoJugador("Ivan");
+            IJugador ivan = miBaseDatosJugadores.nuevoJugador("Pedro");
             Assert.IsNotNull(ivan);
         }
         [TestMethod]
         public void TestRecuperacionJugador()
         {
-            BaseDatosJugadores miBaseDatosJugadores =
+            IBaseDatosJugadores miBaseDatosJugadores =
                 Juego.GetInstancia().baseDatosJugadores;
-            Jugador ivan = miBaseDatosJugadores.getJugador("Ivan");
+            IJugador ivan = miBaseDatosJugadores.getJugador("Ivan");
             Assert.IsNotNull(ivan);
         }
         [TestMethod]
         public void TestAltaYRecuperacionJugador()
         {
-            BaseDatosJugadores miBaseDatosJugadores =
+            IBaseDatosJugadores miBaseDatosJugadores =
                 Juego.GetInstancia().baseDatosJugadores;
-            Jugador ivan = miBaseDatosJugadores.getOrCreateJugador("Ivan");
+            IJugador ivan = miBaseDatosJugadores.getOrCreateJugador("Ivan");
             Assert.IsNotNull(ivan);
         }
         [TestMethod]
         public void TestNombreJugador()
         {
-            BaseDatosJugadores miBaseDatosJugadores =
+            IBaseDatosJugadores miBaseDatosJugadores =
                 Juego.GetInstancia().baseDatosJugadores;
-            Jugador ivan = miBaseDatosJugadores.getOrCreateJugador("Ivan");
+            IJugador ivan = miBaseDatosJugadores.getOrCreateJugador("Ivan");
             Assert.AreEqual(ivan.nombre,"Ivan");
         }
 

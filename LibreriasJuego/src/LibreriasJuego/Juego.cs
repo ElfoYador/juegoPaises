@@ -9,8 +9,8 @@ namespace LibreriasJuego
 
         private static Juego miJuego;
         private Juego() {
-            baseDatosJugadores = null;
-            baseDatosGeografica = null;
+            baseDatosJugadores = new BaseDatosJugadores();
+            baseDatosGeografica = new BaseDatosGeografica();
 
         }
 

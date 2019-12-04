@@ -11,7 +11,7 @@ namespace LibreriasJuego
         public IContinente continente { get; }
         public IList<IPregunta> historicoPreguntas { get; }
 
-        public IPregunta nuevaPregunta()
+        public IPregunta nuevaPregunta();
 
     }
 }
