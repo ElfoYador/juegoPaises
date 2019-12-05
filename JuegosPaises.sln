@@ -5,10 +5,12 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibreriasJuego", "LibreriasJuego\LibreriasJuego.csproj", "{5CFEAC6A-D12F-439A-80A5-A92DCD6987FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasLibreria", "PruebasLibreria\PruebasLibreria.csproj", "{2990D59C-9B85-458F-A947-0C13BE6C17BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebasLibreria", "PruebasLibreria\PruebasLibreria.csproj", "{2990D59C-9B85-458F-A947-0C13BE6C17BC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5CFEAC6A-D12F-439A-80A5-A92DCD6987FB} = {5CFEAC6A-D12F-439A-80A5-A92DCD6987FB}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfazJuego", "InterfazJuego\InterfazJuego.csproj", "{E7D50A98-1CA8-432E-8B1F-DC5F49123A2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 		{2990D59C-9B85-458F-A947-0C13BE6C17BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2990D59C-9B85-458F-A947-0C13BE6C17BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2990D59C-9B85-458F-A947-0C13BE6C17BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D50A98-1CA8-432E-8B1F-DC5F49123A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D50A98-1CA8-432E-8B1F-DC5F49123A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D50A98-1CA8-432E-8B1F-DC5F49123A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D50A98-1CA8-432E-8B1F-DC5F49123A2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
