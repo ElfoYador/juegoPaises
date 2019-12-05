@@ -22,6 +22,12 @@ namespace InterfazJuego
         public juego()
         {
             InitializeComponent();
+           // LabelJugador.Content = 
+        }
+
+        private void Fin_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -32,11 +32,11 @@ namespace LibreriasJuego
         private void popularBaseDatos()
         {
             IList<string> nombresContinentes = new List<string>();
-          //  nombresContinentes.Add("Africa");
-            //nombresContinentes.Add("America");
-          //  nombresContinentes.Add("Asia");
+            nombresContinentes.Add("Africa");
+            nombresContinentes.Add("America");
+           // nombresContinentes.Add("Asia");
             nombresContinentes.Add("Europa");
-         //   nombresContinentes.Add("Oceania");
+            nombresContinentes.Add("Oceania");
             // lee ficheros
             foreach (string nombre in nombresContinentes)
             {

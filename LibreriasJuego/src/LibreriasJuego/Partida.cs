@@ -5,6 +5,7 @@ using System.Text;
 namespace LibreriasJuego
 {
     public class Partida: IPartida
+
     {
        static Random generadorAleatorios = new Random();
         internal Partida(IJugador jugador, IContinente continente) {
@@ -25,6 +26,7 @@ namespace LibreriasJuego
             int elElegido = (int)(numeroAleatorio * total);
             pais = this.continente.paises[elElegido];
             IPregunta p = new Pregunta(this,pais);
+            historicoPreguntas.Add(p);
           return p;
         }
 

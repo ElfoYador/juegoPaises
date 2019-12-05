@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibreriasJuego;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 
-namespace InterfazJuego
+namespace InterfazJuegoCore
 {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
@@ -24,9 +25,14 @@ namespace InterfazJuego
         public MainWindow()
         {
             InitializeComponent();
-            //Juego.GetInstancia();
-           // cmb_Continentes.
+            Juego.GetInstancia();
+            cargarContinentes();
         }
+
+        private void cargarContinentes() {
+           Juego.GetInstancia().baseDatosGeografica.Continentes.ToList().ForEach((continente) => cmb_Continentes.Items.Add(continente.nombre));
+        }
+
 
         private void cmb_Continentes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -36,9 +42,12 @@ namespace InterfazJuego
         private void Jugar_Click(object sender, RoutedEventArgs e)
         {
             var nombreJugador = txt_Jugador.Text;
-            var continente = cmb_Continentes.SelectedItem;
+            string nombreContinente = (string) cmb_Continentes.SelectedItem;
+            IJugador jugador = Juego.GetInstancia().baseDatosJugadores.getOrCreateJugador(nombreJugador);
+            IContinente continente = Juego.GetInstancia().baseDatosGeografica.getContinente(nombreContinente);
+            IPartida partida = Juego.GetInstancia().baseDatosJugadores.getJugador(nombreJugador).getNuevaPartida(continente);
+            juego ventanaJuego = new juego(partida);
             
-            juego ventanaJuego = new juego();
             ventanaJuego.Show();
         }
     }
