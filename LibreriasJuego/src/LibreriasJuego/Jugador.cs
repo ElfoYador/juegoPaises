@@ -5,6 +5,8 @@ namespace LibreriasJuego
 {
     public class Jugador:IJugador
 
+
+
     {
         public Jugador(string nombre) {
             this.nombre = nombre;
