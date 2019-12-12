@@ -6,7 +6,7 @@ namespace LibreriasJuego
     public class Pregunta: IPregunta
     {
         
-        internal Pregunta (IPartida partida,IPais pais)
+        public Pregunta (IPartida partida,IPais pais)
         {
             this.partida = partida;
             this.pais = pais;

@@ -5,7 +5,7 @@ namespace LibreriasJuego
     public class Continente: IContinente
     {
 
-        internal Continente(string nombre) {
+        public Continente(string nombre) {
             this.nombre = nombre;
             misPaises = new Dictionary<string, IPais>();
         }
@@ -19,7 +19,7 @@ namespace LibreriasJuego
 
             return misPaises[nombrePais];
         }
-        internal void asignarPais (IPais nuevoPais)
+        public void asignarPais (IPais nuevoPais)
         {
             misPaises.Add(nuevoPais.nombre, nuevoPais);
         }

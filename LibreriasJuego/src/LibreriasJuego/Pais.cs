@@ -2,7 +2,7 @@
 {
     public class Pais: IPais
     {
-        internal Pais(string nombre, string capital,IContinente continente) {
+        public Pais(string nombre, string capital,IContinente continente) {
             this.nombre = nombre;
             this.capital = capital;
             this.continente = continente;

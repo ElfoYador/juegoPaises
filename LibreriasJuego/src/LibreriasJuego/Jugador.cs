@@ -6,7 +6,7 @@ namespace LibreriasJuego
     public class Jugador:IJugador
 
     {
-        internal Jugador(string nombre) {
+        public Jugador(string nombre) {
             this.nombre = nombre;
             historicoPartidas = new List<IPartida>();
 

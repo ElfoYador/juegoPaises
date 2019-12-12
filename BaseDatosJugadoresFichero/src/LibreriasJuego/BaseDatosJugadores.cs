@@ -8,7 +8,7 @@ namespace LibreriasJuego
 
     {
        
-        internal BaseDatosJugadores()
+        public BaseDatosJugadores()
         {
             misJugadores = new Dictionary<string, IJugador>();
         }

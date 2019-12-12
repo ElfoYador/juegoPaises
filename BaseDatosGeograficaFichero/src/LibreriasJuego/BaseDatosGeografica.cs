@@ -9,7 +9,7 @@ namespace LibreriasJuego
     public class BaseDatosGeografica: IBaseDatosGeografica
     {
 
-        internal BaseDatosGeografica() {
+        public BaseDatosGeografica() {
             miBaseDatosGeograficaContinentes = new Dictionary<string, IContinente>();
             miBaseDatosGeograficaPaises = new Dictionary<string, IPais>();
             popularBaseDatos();
